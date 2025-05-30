@@ -1,5 +1,5 @@
 import "./Navbar.scss";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Logo from "../../assets/images/studcon_logo.avif";
 
 export default function Navbar() {
@@ -16,7 +16,7 @@ export default function Navbar() {
           Home
         </button>
         <button className="navbar__button" onClick={() => navigate("/about")}>
-          About us
+          About Us
         </button>
         <button className="navbar__button" onClick={() => navigate("/about")}>
           Services
