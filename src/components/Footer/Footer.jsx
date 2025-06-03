@@ -18,26 +18,26 @@ export default function Footer() {
               <img
                 src={Instagram}
                 alt="Instagram icon"
-                class="footer__social-icon"
+                className="footer__social-icon"
               />
             </a>
             <a href="https://www.Facebook.com">
               <img
                 src={Facebook}
                 alt="Facebook icon"
-                class="footer__social-icon"
+                className="footer__social-icon"
               />
             </a>
             <a href="https://www.whatsapp.com">
               <img
                 src={Whatsapp}
                 alt="Whatsapp icon"
-                class="footer__social-icon"
+                className="footer__social-icon"
               />
             </a>
           </div>
-          <p>(305) 555-5555</p>
-          <p>info@studcon.com</p>
+          <p>Tel: (786) 689-8522 / (786) 218-0631</p>
+          <p>Email: estimates@studcon.com</p>
         </div>
       </div>
     </footer>
