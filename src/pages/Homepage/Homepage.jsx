@@ -2,7 +2,11 @@ import { useState } from "react";
 import "./Homepage.scss";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import Logo from "../../assets/images/studcon_logo.avif";
 import Mockphoto2 from "../../assets/images/mock_photo2.jpg";
+import FramingIcon from "../../assets/icons/framing.png";
+import PlasterIcon from "../../assets/icons/plaster.png";
+import RepairIcon from "../../assets/icons/repair.png";
 
 export default function Homepage() {
   return (
@@ -10,7 +14,8 @@ export default function Homepage() {
       <Navbar />
       <main className="homepage">
         <div className="homepage__hero-container">
-          <h1 className="homepage__hero-title">Studcon</h1>
+          <img src={Logo} className="homepage__hero-logo" alt="company logo" />
+          <button className="homepage__hero-button">Free Estimate</button>
         </div>
         <div className="homepage__container homepage__about-container">
           <h1 className="homepage__about-title">About Us</h1>
@@ -27,11 +32,40 @@ export default function Homepage() {
         </div>
         <div className="homepage__container homepage__services-container">
           <h1 className="homepage__services-title">Services</h1>
-          <p className="homepage__services-text">
-            Metal Stud Framing Wood Framing Drywall Installation Drywall
-            Finishing & Texturing Soundproofing & Insulation Fire-Rated
-            Assemblies Tenant Build-Outs
-          </p>
+          <section className="homepage__services-cards">
+            <div className="homepage__service-card">
+              <img className="homepage__service-icon" src={FramingIcon} />
+              <div className="homepage__service-info">
+                <h2>Framing & Drywall Installation</h2>
+                <p>
+                  From new construction projects to remodels, our skilled team
+                  ensures precision and efficiency in every framing and drywall
+                  installation.
+                </p>
+              </div>
+            </div>
+            <div className="homepage__service-card">
+              <img className="homepage__service-icon" src={PlasterIcon} />
+              <div className="homepage__service-info">
+                <h2>Drywall Repair</h2>
+                <p>
+                  Accidents happen, and when they do, we're here to restore your
+                  walls to perfection. Trust us for seamless drywall repairs.
+                </p>
+              </div>
+            </div>
+            <div className="homepage__service-card">
+              <img className="homepage__service-icon" src={RepairIcon} />
+              <div className="homepage__service-info">
+                <h2>Drywall Plaster</h2>
+                <p>
+                  Enhance the aesthetics of your interiors with our expert
+                  drywall plaster services. We use premium materials for smooth
+                  finishes that elevate your space!
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
         <div className="homepage__container homepage__projects-container">
           <h1 className="homepage__projects-title">Projects</h1>
