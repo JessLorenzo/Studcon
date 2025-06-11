@@ -1,3 +1,6 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles//partials/mixins" as *;
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -16,6 +19,7 @@
 
   input,
   textarea {
+    font-family: "Roboto", Tahoma, sans-serif;
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -23,6 +27,7 @@
   }
 
   &__submit {
+    font-family: "Roboto", Tahoma, sans-serif;
     background-color: #fde203;
     color: black;
     border: black solid 2px;

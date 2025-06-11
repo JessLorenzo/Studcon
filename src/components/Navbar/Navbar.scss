@@ -1,9 +1,12 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles//partials/mixins" as *;
+
 .navbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e8e6e6;
+  background-color: $studcon-grey;
 
   &__logo {
     display: flex;
@@ -22,9 +25,21 @@
 
   &__button {
     font-family: "Roboto", Tahoma, sans-serif;
-    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(238, 238, 238);
+    font-size: 15px;
+    padding: 0.5rem 1rem;
     border: solid 2px black;
     border-radius: 0.5rem;
     cursor: pointer;
+
+    &:hover {
+      background-color: $studcon-darkgrey;
+    }
+  }
+
+  &__button-contact {
+    background-color: $studcon-yellow;
   }
 }

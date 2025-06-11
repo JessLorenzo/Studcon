@@ -8,22 +8,22 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/">
-        <img src={Logo} alt="studcon logo" className="navbar__logo" />{" "}
+        <img src={Logo} alt="studcon logo" className="navbar__logo" />
       </Link>
 
       <div className="navbar__buttons">
-        <button className="navbar__button" onClick={() => navigate("/")}>
-          Home
-        </button>
-        <button className="navbar__button" onClick={() => navigate("/about")}>
+        <a className="navbar__button" href="#about">
           About Us
-        </button>
-        <button className="navbar__button" onClick={() => navigate("/about")}>
+        </a>
+        <a className="navbar__button" href="#services">
           Services
-        </button>
-        <button className="navbar__button" onClick={() => navigate("/contact")}>
-          Contact Us
-        </button>
+        </a>
+        <a className="navbar__button" href="#projects">
+          Projects
+        </a>
+        <a className="navbar__button navbar__button-contact" href="#contact">
+          Free Estimate
+        </a>
       </div>
     </nav>
   );

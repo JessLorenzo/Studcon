@@ -9,36 +9,50 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__content">
-        <Link to="/">
-          <img src={Logo} alt="studcon logo" className="footer__logo" />{" "}
+        <Link to="/" className="footer__logo-link">
+          <img src={Logo} alt="Studcon logo" className="footer__logo" />
         </Link>
-        <div className="footer__contact">
-          <div className="footer__social-icons">
-            <a href="https://www.instagram.com">
+
+        <div className="footer__info">
+          <div className="footer__contact">
+            <p className="footer__contact-item">
+              Tel: (786) 689-8522 / (786) 218-0631
+            </p>
+            <p className="footer__contact-item">Email: estimates@studcon.com</p>
+          </div>
+
+          <div className="footer__social">
+            <a
+              href="https://www.instagram.com/_studcon?igsh=aXhpN3dldDYwOTk2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__social-link"
+            >
               <img
                 src={Instagram}
-                alt="Instagram icon"
+                alt="Instagram"
                 className="footer__social-icon"
               />
+              Instagram
             </a>
-            <a href="https://www.Facebook.com">
-              <img
-                src={Facebook}
-                alt="Facebook icon"
-                className="footer__social-icon"
-              />
-            </a>
-            <a href="https://www.whatsapp.com">
+            <a
+              href="https://wa.me/17862180631?text=Hi%20Studcon%2C%20I'm%20interested%20in%20a%20quote!"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__social-link"
+            >
               <img
                 src={Whatsapp}
-                alt="Whatsapp icon"
+                alt="WhatsApp"
                 className="footer__social-icon"
               />
+              WhatsApp
             </a>
           </div>
-          <p>Tel: (786) 689-8522 / (786) 218-0631</p>
-          <p>Email: estimates@studcon.com</p>
         </div>
+      </div>
+      <div className="footer__copyright">
+        © {new Date().getFullYear()} Studcon. All rights reserved.
       </div>
     </footer>
   );
