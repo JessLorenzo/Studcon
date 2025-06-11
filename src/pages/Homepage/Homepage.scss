@@ -20,6 +20,11 @@
     width: 25rem;
   }
 
+  &__hero-slogan {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
   &__hero-button {
     padding: 0.5rem 1rem;
     margin: 1rem;
@@ -41,10 +46,22 @@
     background-color: white;
   }
 
+  &__about-title {
+    font-family: "Play", sans-serif;
+  }
+
+  &__about-text {
+    text-align: center;
+  }
+
   &__services-container {
-    background-color: #e8e6e6;
+    background-color: #b9b9b9;
     margin: 0;
     padding: 2rem;
+  }
+
+  &__services-title {
+    font-family: "Play", sans-serif;
   }
 
   &__services-cards {
@@ -78,5 +95,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  &__service-subtitle {
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 1rem;
+  }
+
+  &__service-text {
+    text-align: center;
+  }
+
+  &__projects-title {
+    font-family: "Play", sans-serif;
+  }
+
+  &__contact-container {
+    background-color: #f9f4c6;
+    margin: 0;
+    padding: 2rem;
+  }
+
+  &__contact-title {
+    font-family: "Play", sans-serif;
   }
 }

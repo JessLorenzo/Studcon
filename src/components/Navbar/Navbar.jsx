@@ -22,7 +22,7 @@ export default function Navbar() {
           Services
         </button>
         <button className="navbar__button" onClick={() => navigate("/contact")}>
-          Contact
+          Contact Us
         </button>
       </div>
     </nav>

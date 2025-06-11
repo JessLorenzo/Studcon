@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Homepage.scss";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import ContactForm from "../../components/ContactForm/ContactForm.jsx";
 import Logo from "../../assets/images/studcon_logo.avif";
 import Mockphoto2 from "../../assets/images/mock_photo2.jpg";
 import FramingIcon from "../../assets/icons/framing.png";
@@ -15,10 +16,13 @@ export default function Homepage() {
       <main className="homepage">
         <div className="homepage__hero-container">
           <img src={Logo} className="homepage__hero-logo" alt="company logo" />
+          <p className="homepage__hero-slogan">
+            Your Trusted Drywall & Framing Experts!
+          </p>
           <button className="homepage__hero-button">Free Estimate</button>
         </div>
         <div className="homepage__container homepage__about-container">
-          <h1 className="homepage__about-title">About Us</h1>
+          <h1 className="homepage__about-title">ABOUT US</h1>
           <img src={Mockphoto2} className="homepage__about-image" />
           <p className="homepage__about-text">
             At Studcon, we specialize in high-quality framing and drywall
@@ -31,13 +35,15 @@ export default function Homepage() {
           </p>
         </div>
         <div className="homepage__container homepage__services-container">
-          <h1 className="homepage__services-title">Services</h1>
+          <h1 className="homepage__services-title">SERVICES</h1>
           <section className="homepage__services-cards">
             <div className="homepage__service-card">
               <img className="homepage__service-icon" src={FramingIcon} />
               <div className="homepage__service-info">
-                <h2>Framing & Drywall Installation</h2>
-                <p>
+                <h2 className="homepage__service-subtitle">
+                  Framing & Drywall Installation
+                </h2>
+                <p className="homepage__service-text">
                   From new construction projects to remodels, our skilled team
                   ensures precision and efficiency in every framing and drywall
                   installation.
@@ -47,8 +53,8 @@ export default function Homepage() {
             <div className="homepage__service-card">
               <img className="homepage__service-icon" src={PlasterIcon} />
               <div className="homepage__service-info">
-                <h2>Drywall Repair</h2>
-                <p>
+                <h2 className="homepage__service-subtitle">Drywall Repair</h2>
+                <p className="homepage__service-text">
                   Accidents happen, and when they do, we're here to restore your
                   walls to perfection. Trust us for seamless drywall repairs.
                 </p>
@@ -57,8 +63,8 @@ export default function Homepage() {
             <div className="homepage__service-card">
               <img className="homepage__service-icon" src={RepairIcon} />
               <div className="homepage__service-info">
-                <h2>Drywall Plaster</h2>
-                <p>
+                <h2 className="homepage__service-subtitle">Drywall Plaster</h2>
+                <p className="homepage__service-text">
                   Enhance the aesthetics of your interiors with our expert
                   drywall plaster services. We use premium materials for smooth
                   finishes that elevate your space!
@@ -68,20 +74,13 @@ export default function Homepage() {
           </section>
         </div>
         <div className="homepage__container homepage__projects-container">
-          <h1 className="homepage__projects-title">Projects</h1>
+          <h1 className="homepage__projects-title">PROJECTS</h1>
           <h2>Our Work Speaks for Itself</h2>
-          <p className="homepage__projects-text">
-            🏠 Modern Townhome Build – Coral Gables, FL Framing and drywall
-            installation for a 10-unit luxury townhome development. Delivered
-            ahead of schedule with precision finishing and soundproof party
-            walls. 🏢 Commercial Office Renovation – Miami, FL Complete demo and
-            reframe of interior partitions, including new drywall systems,
-            fire-rated assemblies, and acoustic ceilings for a 5,000 sq ft
-            office space. 🏬 Retail Build-Out – Wynwood, FL Framing and drywall
-            for a high-end retail space featuring custom ceiling features,
-            floating walls, and specialty finishes to meet branding
-            requirements.
-          </p>
+          <p className="homepage__projects-text">photo gallery</p>
+        </div>
+        <div className="homepage__container homepage__contact-container">
+          <h1 className="homepage__contact-title">CONTACT US</h1>
+          <ContactForm />
         </div>
       </main>
       <Footer />
