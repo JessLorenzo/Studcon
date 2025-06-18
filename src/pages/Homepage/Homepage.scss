@@ -45,7 +45,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin: 2rem;
+    margin: 4rem;
     background-color: white;
   }
 
@@ -63,22 +63,25 @@
     align-items: center;
     gap: 2rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1076px) {
+      justify-content: center;
       flex-direction: row;
       gap: 8rem;
     }
   }
 
   &__about-design {
-    width: 18.75rem;
+    width: 19.75rem;
     height: 15.5rem;
     position: relative;
     top: -1rem;
     left: -3rem;
     border: 5px solid $studcon-yellow;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1076px) {
       margin-left: 4rem;
+      width: 23.75rem;
+      height: 18.5rem;
     }
   }
 
@@ -92,6 +95,10 @@
     width: 25rem;
     object-fit: cover;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    @media (min-width: 1076px) {
+      width: 30rem;
+    }
   }
 
   &__about-info {
@@ -99,6 +106,10 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+
+    @media (min-width: 1076px) {
+      width: 50%;
+    }
   }
 
   &__about-text {
@@ -134,11 +145,26 @@
     margin: 0;
   }
 
+  &__services-background {
+    border: $studcon-yellow solid 5px;
+    position: relative;
+    width: 15rem;
+    height: 3rem;
+    top: -1rem;
+    left: -1rem;
+    margin-left: 2rem;
+  }
+
   &__services-title {
     font-family: "Play", sans-serif;
     color: $studcon-ash;
     text-align: left;
-    margin-bottom: 3rem;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    background-color: white;
+    padding: 0rem 10px;
+    width: 20rem;
   }
 
   &__services-cards {
@@ -146,15 +172,15 @@
     grid-template-columns: 1fr;
     gap: 2rem;
     justify-items: center;
+    padding-top: 1rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1076px) {
       grid-template-columns: repeat(3, 1fr);
     }
   }
 
   &__service-card {
     background-color: white;
-    border-radius: 3px;
     padding: 2rem;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
@@ -199,11 +225,26 @@
     margin: 2rem 0;
   }
 
+  &__projects-background {
+    border: $studcon-yellow solid 5px;
+    position: relative;
+    width: 15rem;
+    height: 3rem;
+    top: -1rem;
+    left: -1rem;
+    margin-left: 4rem;
+  }
+
   &__projects-title {
-    text-align: start;
     font-family: "Play", sans-serif;
-    padding-left: 2rem;
     color: $studcon-ash;
+    text-align: left;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    background-color: white;
+    padding: 0rem 10px;
+    width: 20rem;
   }
 
   &__carousel {
@@ -236,7 +277,6 @@
     width: 30rem;
     height: auto;
     object-fit: cover;
-    border-radius: 3px;
   }
 
   &__contact-container {
@@ -246,7 +286,69 @@
   }
 
   &__contact-title {
+    align-self: flex-start;
     font-family: "Play", sans-serif;
     color: $studcon-ash;
+    margin-bottom: 2rem;
+
+    @media (min-width: 1076px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    @media (min-width: 1076px) {
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      gap: 0;
+      margin-left: 3rem;
+    }
+  }
+
+  &__contact-info {
+    @media (min-width: 1076px) {
+      align-self: center;
+    }
+  }
+
+  &__contact-background {
+    border: $studcon-darkgrey solid 5px;
+    position: relative;
+    width: 19rem;
+    height: 12rem;
+    top: -1rem;
+    left: -4rem;
+    margin-left: 6rem;
+
+    @media (min-width: 1076px) {
+      width: 20rem;
+      height: 13rem;
+    }
+  }
+
+  &__contact-text {
+    color: $studcon-ash;
+    font-size: 20px;
+    gap: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 4rem 10px;
+    width: 20rem;
+  }
+
+  &__contact-form {
+    margin-top: 2rem;
   }
 }

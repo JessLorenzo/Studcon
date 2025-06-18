@@ -60,7 +60,9 @@ export default function Homepage() {
           className="homepage__container homepage__services-container"
           id="services"
         >
-          <h1 className="homepage__services-title">OUR SERVICES</h1>
+          <div className="homepage__services-background">
+            <h1 className="homepage__services-title">OUR SERVICES</h1>
+          </div>
           <section className="homepage__services-cards">
             <div className="homepage__service-card">
               <img
@@ -112,9 +114,11 @@ export default function Homepage() {
         </div>
 
         <div className="homepage__container homepage__projects-container">
-          <h1 className="homepage__projects-title" id="projects">
-            PROJECTS
-          </h1>
+          <div className="homepage__projects-background">
+            <h1 className="homepage__projects-title" id="projects">
+              PROJECTS
+            </h1>
+          </div>
           <div className="homepage__carousel">
             <div className="homepage__carousel-track">
               {[
@@ -144,7 +148,22 @@ export default function Homepage() {
           <h1 className="homepage__contact-title" id="contact">
             CONTACT US
           </h1>
-          <ContactForm />
+          <div className="homepage__contact-section">
+            <div className="homepage__contact-info">
+              <div className="homepage__contact-background">
+                <div className="homepage__contact-text">
+                  <p>
+                    <strong>Studcon Drywall & Framing</strong>
+                  </p>
+                  <p>(786) 689-8522</p>
+                  <p>estimates@studcon.com</p>
+                </div>
+              </div>
+            </div>
+            <div className="homepage__contact-form">
+              <ContactForm />
+            </div>
+          </div>
         </div>
       </main>
       <Footer />

@@ -22,16 +22,16 @@
     font-family: "Roboto", Tahoma, sans-serif;
     padding: 0.75rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
     font-size: 1rem;
   }
 
   &__submit {
     font-family: "Roboto", Tahoma, sans-serif;
-    background-color: #fde203;
+    font-size: 1rem;
+    background-color: $studcon-yellow;
     color: black;
     border: black solid 2px;
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 0.5rem;
     cursor: pointer;
 
