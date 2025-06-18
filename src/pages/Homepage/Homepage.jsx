@@ -36,23 +36,31 @@ export default function Homepage() {
             ABOUT US
           </h1>
           <div className="homepage__about-content">
-            <img src={TruckPhoto} className="homepage__about-image" />
-            <p className="homepage__about-text">
-              At Studcon, we specialize in high-quality framing and drywall
-              solutions tailored for today’s fast-paced construction demands.
-              With a commitment to craftsmanship, safety, and efficiency, our
-              experienced crew delivers clean, solid work that keeps your
-              project moving forward. From custom homes to large-scale
-              commercial builds, we bring structure and finish to every space —
-              with no corners cut and no shortcuts taken.
-            </p>
+            <div className="homepage__about-design">
+              <img src={TruckPhoto} className="homepage__about-image" />
+            </div>
+            <div className="homepage__about-info">
+              <p className="homepage__about-text">
+                At <strong>Studcon</strong>, we specialize in high-quality{" "}
+                <strong>framing</strong> and <strong>drywall</strong> solutions
+                tailored for today’s fast-paced construction demands. With a
+                commitment to craftsmanship, safety, and efficiency, our
+                experienced crew delivers clean, solid work that keeps your
+                project moving forward. From custom homes to large-scale
+                commercial builds, we bring structure and finish to every space
+                — with no corners cut and no shortcuts taken.
+              </p>
+              <a className="homepage__about-button" href="#contact">
+                Contact Us
+              </a>
+            </div>
           </div>
         </div>
         <div
           className="homepage__container homepage__services-container"
           id="services"
         >
-          <h1 className="homepage__services-title">SERVICES</h1>
+          <h1 className="homepage__services-title">OUR SERVICES</h1>
           <section className="homepage__services-cards">
             <div className="homepage__service-card">
               <img
@@ -107,34 +115,31 @@ export default function Homepage() {
           <h1 className="homepage__projects-title" id="projects">
             PROJECTS
           </h1>
-          <div className="homepage__projects-gallery">
-            <img
-              className="homepage__projects-image"
-              src={SpaImage1}
-              alt="spa beds"
-            />
-            <img
-              className="homepage__projects-image"
-              src={SpaImage2}
-              alt="spa entrance"
-            />
-            <img
-              className="homepage__projects-image"
-              src={SpaImage3}
-              alt="spa shelves"
-            />
-            <img
-              className="homepage__projects-image"
-              src={SpaImage4}
-              alt="spa entrance"
-            />
-            <img
-              className="homepage__projects-image"
-              src={SpaImage5}
-              alt="spa room"
-            />
+          <div className="homepage__carousel">
+            <div className="homepage__carousel-track">
+              {[
+                SpaImage1,
+                SpaImage2,
+                SpaImage3,
+                SpaImage4,
+                SpaImage5,
+                SpaImage1,
+                SpaImage2,
+                SpaImage3,
+                SpaImage4,
+                SpaImage5,
+              ].map((img, idx) => (
+                <img
+                  key={idx}
+                  className="homepage__projects-image"
+                  src={img}
+                  alt={`spa project ${idx + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
+
         <div className="homepage__container homepage__contact-container">
           <h1 className="homepage__contact-title" id="contact">
             CONTACT US

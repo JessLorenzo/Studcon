@@ -16,9 +16,9 @@ export default function Footer() {
         <div className="footer__info">
           <div className="footer__contact">
             <p className="footer__contact-item">
-              Tel: (786) 689-8522 / (786) 218-0631
+              (786) 689-8522 / (786) 218-0631
             </p>
-            <p className="footer__contact-item">Email: estimates@studcon.com</p>
+            <p className="footer__contact-item"> estimates@studcon.com</p>
           </div>
 
           <div className="footer__social">
