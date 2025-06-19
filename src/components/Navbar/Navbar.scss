@@ -39,11 +39,16 @@
     text-decoration: none;
     color: black;
     background-color: rgb(238, 238, 238);
-    font-size: 15px;
-    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    padding: 0.5rem;
     border: solid 2px black;
     border-radius: 0.5rem;
     cursor: pointer;
+
+    @media (min-width: 1076px) {
+      font-size: 15px;
+      padding: 0.5rem 1rem;
+    }
 
     &:hover {
       background-color: $studcon-darkgrey;
