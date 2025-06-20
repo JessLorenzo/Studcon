@@ -29,6 +29,7 @@ export default function ContactForm() {
 
   return (
     <form ref={form} onSubmit={sendEmail} className="contact-form">
+      <h1 className="contact-form__title">Get a Free Quote Today!</h1>
       <div className="contact-form__row">
         <input
           type="text"

@@ -12,6 +12,11 @@
     max-width: 600px;
   }
 
+  &__title {
+    font-family: "Play", sans-serif;
+    margin-bottom: 1rem;
+  }
+
   &__row {
     display: flex;
     gap: 1rem;

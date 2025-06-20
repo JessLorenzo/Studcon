@@ -28,17 +28,28 @@
   }
 
   &__hero-overlay {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     height: 100%;
     width: 100%;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: white;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  &__video-logo {
+    width: 25rem;
+
+    @media (min-width: 1076px) {
+      width: 45rem;
+    }
   }
 
   &__container {
@@ -246,8 +257,7 @@
   }
 
   &__service-icon {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 3rem;
     object-fit: contain;
   }
 
@@ -299,9 +309,46 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
     padding: 0 3rem;
+  }
+
+  &__gallery-item {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+
+    @media (min-width: 1076px) {
+      width: 30rem;
+      height: 30rem;
+    }
+
+    &:hover .homepage__gallery-overlay {
+      opacity: 1;
+    }
+  }
+
+  &__gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); // dark overlay
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &__gallery-text {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 1rem;
   }
 
   &__gallery-image {
@@ -316,7 +363,8 @@
     }
 
     @media (min-width: 1076px) {
-      width: 25rem;
+      width: 30rem;
+      height: 30rem;
     }
   }
 
@@ -427,7 +475,7 @@
   }
 
   &__contact-info {
-    display: none;
+    // display: none;
 
     @media (min-width: 1076px) {
       display: block;
@@ -439,14 +487,14 @@
     border: $studcon-grey solid 5px;
     position: relative;
     width: 19rem;
-    height: 12rem;
+    height: 18rem;
     top: -1rem;
     left: -4rem;
     margin-left: 6rem;
 
     @media (min-width: 1076px) {
-      width: 20rem;
-      height: 13rem;
+      width: 19rem;
+      height: 18rem;
     }
   }
 
