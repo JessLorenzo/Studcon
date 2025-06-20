@@ -15,6 +15,7 @@ export default function Footer() {
 
         <div className="footer__info">
           <div className="footer__contact">
+            <p className="footer__contact-item">Miami, Florida</p>
             <p className="footer__contact-item">Tel: (786) 689-8522</p>
             <p className="footer__contact-item">
               {" "}

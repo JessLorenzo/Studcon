@@ -39,6 +39,7 @@ export default function ContactForm() {
         <input type="text" name="last_name" placeholder="Last Name" required />
       </div>
       <input type="email" name="email" placeholder="Email" required />
+      <input type="phone" name="phone" placeholder="Phone" required />
       <input type="text" name="subject" placeholder="Subject" required />
       <textarea
         name="message"
